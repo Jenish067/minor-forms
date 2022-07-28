@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" -->
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="../static/css/book.css">
+
+  <!----===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <title>Responsive Regrisation Form </title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> 
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/f815347d2a.js" crossorigin="anonymous"></script> 
+  <script src="../static/js/register.js">
+  </script>
+
+</head>
+
+<body>
+<!-- header  -->
+
+<div class="wrapper">
+  <nav>
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="content">
+      <div class="logo"><a href="#">Rental&nbsp;Zone</a></div>
+      <ul class="links">
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutUs">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#contactUs">Contact</a></li>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <li><a href="#login" class="navButton">Login</a></li>
+          <li><a href="#register" class="navButton">Register</a></li>
+          <li><a href="#Profile" class="navButton">Profile</a></li>
+          <li><a href="#Logout" class="navButton">Logout</a></li>
+    </div>
+  </nav>
+</div>
+<!-- header ends -->
+
+  <div class="container">
+    <h1>Book Form</h1>
+    <span id="result"></span>
+    <br>
+    <form action="#" name="form" onsubmit="return validateForm()">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title"></span>
+
+
+          <div class="fields">
+            <div class="input-field">
+              <label>No of Rooms</label><br>
+              <input type="number" name="firstname" id="rnum" placeholder="Enter number of rooms">
+            </div>
+            <div class="input-field">
+              <label>Checkin Date</label><br>
+              <input type="date" name="date" id="date" placeholder="Enter valid date">
+            </div>
+            <div class="input-field">
+                <label>Payment Method</label>
+                <select name="method" id="method">
+                    <option value="none">Select Method</option>
+                    <option value="seelct">Online</option>
+                    <option value="select">Offline</option>
+                  </select>
+            </div>
+            <div class="check">
+                <input type="checkbox">
+                <label>paid</label>
+              </div>
+
+        <button class="nextBtn">
+          <span type="submit" class="btnText" id="btn">Book</span>
+          <button type="submit" value="Book">
+          </button>
+        </button>
+      </div>
+  </div>
+  </form>
+  </div>
+</body>
+
+</html>

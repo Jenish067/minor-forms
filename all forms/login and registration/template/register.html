@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" -->
+
+  <!----======== CSS ======== -->
+  <link rel="stylesheet" href="../static/css/register.css">
+
+  <!----===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <title>Responsive Regrisation Form </title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> 
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/f815347d2a.js" crossorigin="anonymous"></script> 
+  <script src="../static/js/register.js">
+  </script>
+
+</head>
+
+<body>
+<!-- header  -->
+
+<div class="wrapper">
+  <nav>
+    <input type="checkbox" id="show-menu">
+    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="content">
+      <div class="logo"><a href="#">Rental&nbsp;Zone</a></div>
+      <ul class="links">
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutUs">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#contactUs">Contact</a></li>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <li><a href="#login" class="navButton">Login</a></li>
+          <li><a href="#register" class="navButton">Register</a></li>
+          <li><a href="#Profile" class="navButton">Profile</a></li>
+          <li><a href="#Logout" class="navButton">Logout</a></li>
+    </div>
+  </nav>
+</div>
+<!-- header ends -->
+
+  <div class="container">
+    <h1>Registration Form</h1>
+    <span id="result"></span>
+    <br>
+    <form action="#" name="form" onsubmit="return validateForm()">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title"></span>
+
+
+          <div class="fields">
+            <div class="input-field">
+              <label>First Name</label>
+              <input type="text" name="firstname" id="firstname" placeholder="Enter first name">
+            </div>
+
+            <div class="input-field">
+              <label>Last Name</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Enter last name">
+            </div>
+
+            <div class="input-field">
+              <label>Username</label>
+              <input type="text" name="uname" id="username" placeholder="Enter username">
+            </div>
+
+            <div class="input-field">
+              <label>Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter email ">
+            </div>
+
+            <div class="input-field">
+              <label>Password</label>
+              <input type="password" name="password" id="password" placeholder="Enter Password">
+            </div>
+
+            <div class="input-field">
+              <label>Confirm Password</label>
+              <input type="password" name="cpassword" id="confirm-password" placeholder="Confirm Password">
+            </div>
+          </div>
+        </div>
+        <div class="fields">
+          <div class="input-field">
+            <label>Phone</label>
+            <input type="number" name="phone" id="phone" placeholder="Enter Phone Number">
+          </div>
+
+          <div class="input-field">
+            <label>Select User Type</label>
+            <select required>
+              <option disabled selected>Select User Type</option>
+              <option>Room Owner</option>
+              <option>Customer</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label>Address</label>
+            <input type="text" name="address" id="address" placeholder="Enter Address">
+          </div>
+
+          <div class="input-field">
+            <label>Upload ID image</label>
+            <input type="file" id="file" name="file" multiple>
+          </div>
+        </div>
+
+
+        <button class="nextBtn">
+          <span type="submit" class="btnText" id="btn">Submit</span>
+        </button>
+      </div>
+  </div>
+  </form>
+  </div>
+</body>
+
+</html>
